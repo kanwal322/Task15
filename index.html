@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter Signup</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">Dark Mode</span>
+    </div>
+
+    <div class="signup-box">
+      <div class="form-section">
+        <h1>Subscribe to Our Newsletter</h1>
+        <p class="subtitle">Get internship updates, career tips & tech insights</p>
+
+        <form id="newsletter-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required />
+            <small class="error" id="name-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <small class="error" id="email-error"></small>
+          </div>
+          <button type="submit" id="subscribe-btn">
+            <span id="btn-text">Subscribe</span>
+            <span class="loader" id="loader"></span>
+          </button>
+          <p class="privacy-note">🔒 We respect your privacy. No spam ever.</p>
+        </form>
+        <p id="success-message"></p>
+      </div>
+
+      <div class="image-section">
+        <img src="image.png" alt="Newsletter Illustration" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
